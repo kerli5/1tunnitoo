@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 600px;
+}
+
+.todo-list > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.task > div {
+    margin: 3px 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 8px;
+}
+
+.delete, .done, .edit {
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #eee;
+    transition: 0.2s ease;
+}
+
+.delete:hover {
+    background-color: #ffdddd;
+    color: red;
+}
+
+.done:hover {
+    background-color: #ddffdd;
+    color: green;
+}
+
+.edit:hover {
+    background-color: #ddddff;
+    color: blue;
+}
+
+.done-task {
+    background-color: #a1f0a1 !important;
+}
+
+#addButton {
+    margin-top: 20px;
+    background-color: #ffafcc;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#addButton:hover {
+    background-color: #ff85b3;
+}
+
+#buttonContainer {
+    margin-top: 20px;
+}

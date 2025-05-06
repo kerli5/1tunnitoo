@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js" defer></script>
+    <title>Todo</title>
+</head>
+<body>
+    <div id="main">
+        <div id="inputContainer">
+            <input type="text" id="title" placeholder="Pealkiri">
+            <input type="text" id="description" placeholder="Kirjeldus">
+            <input type="date" id="date">
+            <select id="priority">
+                <option value="Kõrge">Kõrge</option>
+                <option value="Keskmine">Keskmine</option>
+                <option value="Madal">Madal</option>
+            </select>
+        </div>
+        <div id="buttonContainer">
+            <button id="addButton">LISA</button>
+        </div>
+        <div id="taskList">
+            Taske pole
+        </div>
+    </div>
+</body>
+</html>
